@@ -12,7 +12,7 @@ Refer this repo for more information: https://gitee.com/amadeus666/mobile_push_k
 Examples in get-key-example.sh, getting keys from gitee
 ## 3. Run command
 cp -rf ../cisco-vpn-autoconnector ~/
-./vpn-controller.sh [vpn_server] [qnumber] [pin]
+./vpn-controller.sh [vpn_server] [qnumber] [pin] [vpn_pac]
 
 ## 4.(optional) Alias your Command
-alias cvpn='~/cisco-vpn-autoconnector/vpn-controller.sh [vpn_server] [qnumber] [pin]'
+alias cvpn='~/cisco-vpn-autoconnector/vpn-controller.sh [vpn_server] [qnumber] [pin] [vpn_pac]'
