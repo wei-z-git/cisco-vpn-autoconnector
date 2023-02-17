@@ -1,4 +1,4 @@
-# Dependance
+# dependence
 - expect,jq
 ```
 brew install expect
