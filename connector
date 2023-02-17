@@ -1,0 +1,19 @@
+#!/usr/bin/expect -f
+
+# variables
+set timeout 30
+set pin $env(pin)
+set key $env(key)
+set qnum $env(qnum)
+
+spawn /opt/cisco/anyconnect/bin/vpn connect $env(vpn_server)
+expect "YubiKey"
+send "1\r"
+expect "Username"
+send "$qnum\r"
+expect "Password"
+send "$key\r"
+expect "Answer"
+send "$pin\r"
+
+interact
