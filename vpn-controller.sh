@@ -12,6 +12,7 @@ vpn-controller(){
         export qnum=$2
         export pin=$3
         expect ~/cisco-vpn-autoconnector/connector
+        echo $meta
     else
         /opt/cisco/anyconnect/bin/vpn disconnect
     fi
