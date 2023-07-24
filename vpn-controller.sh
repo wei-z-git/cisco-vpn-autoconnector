@@ -7,11 +7,12 @@ vpn-controller(){
     if [ -n "$vpn_status" ];then
         export vpn_pac=$4
         networksetup -setautoproxyurl "Wi-Fi" "$vpn_pac"
-        source ~/cisco-vpn-autoconnector/get-key-example.sh
+        source ~/cisco-vpn-autoconnector/get-key.sh
         export vpn_server=$1
         export qnum=$2
         export pin=$3
         expect ~/cisco-vpn-autoconnector/connector
+        echo $meta
     else
         /opt/cisco/anyconnect/bin/vpn disconnect
     fi
