@@ -7,7 +7,7 @@ brew install jq
 # How to use
 ## 1. Store your yubikeys somewhere
 I recommend store them in gitee.com
-Refer this repo for more information: https://gitee.com/amadeus666/mobile_push_key
+Refer this repo for more information: https://github.com/wei-z-git/mobile_push_key
 ## 2. Get your keys
 Examples in get-key-example.sh, getting keys from gitee
 ## 3. Run command
