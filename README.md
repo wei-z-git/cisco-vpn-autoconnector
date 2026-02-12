@@ -18,3 +18,4 @@ cp -rf ../cisco-vpn-autoconnector ~/
 
 ## 4.(optional) Alias your Command
 alias cvpn='~/cisco-vpn-autoconnector/vpn-controller.sh [vpn_server] [qnumber] [pin] [vpn_pac]'
+
