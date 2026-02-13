@@ -6,14 +6,14 @@ set pin $env(pin)
 set key $env(key)
 set qnum $env(qnum)
 
-spawn /opt/cisco/anyconnect/bin/vpn connect $env(vpn_server)
+spawn /opt/cisco/secureclient/bin/vpn connect $env(vpn_server)
 expect "YubiKey"
 send "1\r"
-expect "Username"
+expect "用户名"
 send "$qnum\r"
 expect "Password"
 send "$key\r"
-expect "Answer"
+expect "答"
 send "$pin\r"
 
 interact

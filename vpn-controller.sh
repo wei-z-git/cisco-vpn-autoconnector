@@ -3,7 +3,7 @@
 vpn-controller(){
     echo $vpn_pac
     #1.connect 2.disconnected
-    export vpn_status=`/opt/cisco/anyconnect/bin/vpn status |grep Disconnected`
+    export vpn_status=`/opt/cisco/secureclient/bin/vpn status |grep 已断开`
     export vpn_pac=$4
     export if_adm=$5
     if [ "$if_adm" = true ]; then
@@ -18,7 +18,7 @@ vpn-controller(){
         expect ~/cisco-vpn-autoconnector/connector
         echo $meta
     else
-        /opt/cisco/anyconnect/bin/vpn disconnect
+        /opt/cisco/secureclient/bin/vpn disconnect
     fi
 
 }
